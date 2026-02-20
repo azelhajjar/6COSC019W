@@ -32,10 +32,9 @@ init_profiles() {
     echo "Creating $UNI_FILE"
     tee "$UNI_FILE" >/dev/null <<'EOF'
 search localdomain
-nameserver 192.168.179.2     # University DNS
-nameserver 161.74.92.25
-nameserver 161.74.92.50      # Google DNS
-nameserver 8.8.8.8
+nameserver 161.74.92.25    # University DNS
+nameserver 161.74.92.50     
+nameserver 8.8.8.8     # Google DNS
 EOF
   fi
 
